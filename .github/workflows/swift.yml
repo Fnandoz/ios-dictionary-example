@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - develop
+    - feature/*
+
+jobs:
+  test:
+    # Job name is test
+    name: Test
+    # This job runs on macOS
+    runs-on: macOS-latest
+
+strategy:
+  matrix:
+    destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8', 'platform=iOS Simulator,OS=13.1,name=iPhone 9']
+steps:
+  - name: Build and test
+    run: bundle exec fastlane scan --destination "${destination}" --scheme "EnglishDictionary"
+    env:
+      destination: $
