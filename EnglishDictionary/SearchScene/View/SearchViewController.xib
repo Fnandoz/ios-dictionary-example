@@ -18,24 +18,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdO-MQ-91m">
-                    <rect key="frame" x="159" y="371" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Try another word 🕵️" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdO-MQ-91m">
+                    <rect key="frame" x="8" y="436" width="398" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSA-Gk-ftp">
-                    <rect key="frame" x="184" y="413" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSA-Gk-ftp">
+                    <rect key="frame" x="178.5" y="478" width="57" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Search"/>
                     <connections>
                         <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="ba9-T8-YR5"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gdO-MQ-91m" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="6Rk-60-z51"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gdO-MQ-91m" secondAttribute="trailing" constant="8" id="9AD-8T-itd"/>
+                <constraint firstItem="zSA-Gk-ftp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JK1-13-fRe"/>
+                <constraint firstItem="gdO-MQ-91m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="MGt-zj-F9B"/>
+                <constraint firstItem="zSA-Gk-ftp" firstAttribute="top" secondItem="gdO-MQ-91m" secondAttribute="bottom" constant="8" id="XeY-aw-c0L"/>
+                <constraint firstItem="gdO-MQ-91m" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="vwh-Y7-cnX"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </view>
     </objects>
 </document>
