@@ -10,7 +10,7 @@ import Foundation
 struct DefinitionModel: Codable {
     var type: String
     var definition: String
-    var example: String
+    var example: String?
     var image_url: String?
     var emoji: String?
 }
