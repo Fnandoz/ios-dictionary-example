@@ -23,8 +23,6 @@ class DefinitionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tableView.register(UITableView.self, forCellReuseIdentifier: "definitionHeaderCell")
-//        self.tableView.register(UITableView.self, forCellReuseIdentifier: "definitionCell")
         self.tableView.register(UINib(nibName: "DefinitionHeaderTableViewCell", bundle: self.nibBundle), forCellReuseIdentifier: "definitionHeaderCell")
         self.tableView.register(UINib(nibName: "DefinitionTableViewCell", bundle: self.nibBundle), forCellReuseIdentifier: "definitionCell")
         self.tableView.reloadData()
@@ -52,7 +50,6 @@ extension DefinitionViewController: UITableViewDataSource {
         } else {
             return self.definitionViewModel?.countDefinitions() ?? 0
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
