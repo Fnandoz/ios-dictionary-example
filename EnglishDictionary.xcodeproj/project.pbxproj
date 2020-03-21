@@ -25,6 +25,7 @@
 		3919143523EFB79700129F00 /* DefinitionHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3919143323EFB79700129F00 /* DefinitionHeaderTableViewCell.xib */; };
 		3919143823EFB7AD00129F00 /* DefinitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3919143623EFB7AD00129F00 /* DefinitionTableViewCell.swift */; };
 		3919143923EFB7AD00129F00 /* DefinitionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3919143723EFB7AD00129F00 /* DefinitionTableViewCell.xib */; };
+		39EC270423F9A7DC0004B291 /* SearchViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC270323F9A7DC0004B291 /* SearchViewModelMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		3919143323EFB79700129F00 /* DefinitionHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefinitionHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		3919143623EFB7AD00129F00 /* DefinitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionTableViewCell.swift; sourceTree = "<group>"; };
 		3919143723EFB7AD00129F00 /* DefinitionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefinitionTableViewCell.xib; sourceTree = "<group>"; };
+		39EC270323F9A7DC0004B291 /* SearchViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,10 +192,19 @@
 		3919141723EF7AE500129F00 /* EnglishDictionaryTests */ = {
 			isa = PBXGroup;
 			children = (
+				39A0F76123F8B40200C713A0 /* SearchScene */,
 				3919141823EF7AE500129F00 /* EnglishDictionaryTests.swift */,
 				3919141A23EF7AE500129F00 /* Info.plist */,
 			);
 			path = EnglishDictionaryTests;
+			sourceTree = "<group>";
+		};
+		39A0F76123F8B40200C713A0 /* SearchScene */ = {
+			isa = PBXGroup;
+			children = (
+				39EC270323F9A7DC0004B291 /* SearchViewModelMock.swift */,
+			);
+			path = SearchScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EC270423F9A7DC0004B291 /* SearchViewModelMock.swift in Sources */,
 				3919141923EF7AE500129F00 /* EnglishDictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
